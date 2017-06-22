@@ -1,0 +1,327 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #eeeeee;
+	min-width: 300px;
+	font-family: Georgia, Times New Roman, Sans-serif;
+	line-height: 1.5;
+}
+
+/* ------------------ header-language -------------- */
+
+.header {
+	width: 100%;
+	height: 2.5vh;
+	min-height: 20px;
+	max-height: 50px;
+	text-align: right;
+	margin-bottom: 1%;
+}
+
+.header img {
+	height: 100%;
+	margin: 0 1%;
+}
+
+.header img:hover {
+	cursor: pointer;
+}
+
+/* ------------------ header-main -------------- */
+
+.main_header {
+	width: 100%;
+	height: 10vh;
+	min-height: 3.5rem;
+	border-bottom: 2px solid black;
+	white-space: nowrap;
+}
+
+.main_header p {
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+.active_button,
+.button,
+.icon {
+	display: inline-block;
+	height: 100%;
+	float: left;
+	padding: 0 20px;
+}
+
+.active_button {
+	background-color: black;
+	color: white;
+}
+
+.buttons {
+	height: 100%;
+	float: right;
+}
+
+.button,
+.icon {
+	cursor: pointer;
+}
+
+.icon {
+	display: none;
+	float: right;
+	background-color: black;
+
+}
+
+.active_button p,
+.button p,
+.icon .bars_container {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%); 
+}
+
+.button:hover {
+	background-color: black;
+	color: white;
+	transition: 0.6s ease;
+}
+
+.icon:hover {
+	background-color: #757575;
+	transition: 0.6s ease;
+}
+
+/* ------------------ header-main - icon -------------- */
+
+.bar1, .bar2, .bar3 {
+    width: 25px;
+    height: 2.5px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.bar1 {
+	height: 4px;
+	margin-top: 0;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+	height: 2.5px;
+    -webkit-transform: translate(0px, 8.5px) rotate(-45deg);
+    transform: translate(0px, 8.5px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+    -webkit-transform: translate(0px, -8.5px) rotate(45deg);
+    transform: translate(0px, -8.5px) rotate(45deg);
+}
+
+/* ------------------ header-main - responsive -------------- */
+
+/* When the screen is less than 700 pixels wide, hide all links. Show the link, that should open and close the main_header (.icon) */
+@media screen and (max-width: 700px) {
+	.button {
+  		display: none;
+  		float: none;
+  	}
+  	.icon {
+		right: 0;
+		display: block;
+
+  	}
+	.responsive {
+		position: relative;
+	}
+	.responsive .icon {
+		position: absolute;
+  	}
+  	.responsive .button {
+		display: block;
+		z-index: 1000;
+		background-color: black;
+		color: white;
+  	}
+  	.responsive .button:first-child {
+  		
+  	}
+  	.responsive .button:hover {
+  		background-color: #757575;
+  	}
+}
+
+/* When the device-screen is less than 700 pixels wide, make the link smaller, that open and close the main_header (.icon) */
+@media screen and (max-device-width: 700px) {
+  	.bar1, .bar2, .bar3 {
+	    width: 12.5px;
+	    height: 1.5px;
+	    margin: 3px 0;
+	}
+	.bar1 {
+		height: 2px;
+	}
+	/* Rotate first bar */
+	.change .bar1 {
+		height: 1.5px;
+	    -webkit-transform: translate(0px, 4.5px) rotate(-45deg);
+	    transform: translate(0px, 4.5px) rotate(-45deg);
+	}
+	/* Rotate last bar */
+	.change .bar3 {
+	    -webkit-transform: translate(0px, -4.5px) rotate(45deg);
+	    transform: translate(0px, -4.5px) rotate(45deg);
+	}
+}
+
+/* ------------------ main -------------- */
+
+#about,
+#projects,
+#contact,
+#contact_form,
+.active_content {
+	display: none;
+}
+
+.main {
+	width: 100%;
+}
+
+/* ------------------ projects -------------- */
+
+.projects_examples {
+	text-align: center;
+}
+
+.projects {
+	width: 30%;
+	max-width: 500px;
+	min-width: 200px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.projects_text {
+	word-wrap: break-word;
+}
+
+.projects_link {
+	position: relative;
+}
+
+.projects_picture {
+	display: block;
+	width: 100%;
+}
+
+.overlay {
+	position: absolute;
+	background-color: black; /* fallback color */
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    right: 0;
+}
+
+.overlay_text {
+	white-space: nowrap; 
+  	color: white;
+	position: absolute;
+	overflow: hidden;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: left;
+}
+
+/* ------------------ contact form -------------- */
+
+.link {
+	font-style: italic;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+
+.link:hover {
+	font-weight: bold;
+	font-style: normal;
+}
+
+#contact_form {
+	padding-top: 20px;
+}
+
+input,
+textarea {
+	margin: 5px;
+	margin-left: 0;
+	display: block;
+	border: 1px solid black;
+}
+
+textarea {
+	resize: none;
+}
+
+input[type=submit] {
+	float: right;
+	font-size: 1rem;
+	color: white;
+	background-color: #757575;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input:focus,
+textarea:focus,
+input[type=submit]:hover {
+	box-shadow: 0 0 10px black;
+	transition: 0.5s ease;
+}
+
+td p {
+	margin: 0;
+}
+
+input::-webkit-input-placeholder { /* Chrome */
+  font-size: 0.75rem;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+  font-size: 0.75rem;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+  font-size: 0.75rem;
+}
+input:-moz-placeholder { /* Firefox 4 - 18 */
+  font-size: 0.75rem;
+}
+
+textarea::-webkit-input-placeholder { /* Chrome */
+  font-size: 0.9rem;
+}
+textarea:-ms-input-placeholder { /* IE 10+ */
+  font-size: 0.9rem;
+}
+textarea::-moz-placeholder { /* Firefox 19+ */
+  font-size: 0.9rem;
+}
+textarea:-moz-placeholder { /* Firefox 4 - 18 */
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 750px) {
+	.overlay_text {
+		font-size: 12.5px;
+	}
+}
