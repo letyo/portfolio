@@ -100,6 +100,10 @@
 	$projects["fight"]["text"]["en"] = 'This is a practice project. I just wanted to dig myself in the creation of games by JavaScript. Despite it is very simple (you can\'t even save), but on the other hand it is very funny. I intend to extend it with various attack-options (weapons, spells) and a save button, beside the creation of new programs and websites.';
 	$projects["fight"]["text"]["hu"] = '';
 
+	$projects["blackjack"]["text"]["de"] = 'Ein einfacher Blackjack-Spiel, wurde in jQuery und SCSS geschrieben. Ich spiele es gerne, und ich habe mich darüber gewundert, wie schwer wäre es einen zu programmieren. Und hier ist es! Man kann auch von einigen Möglichkeiten wählen (wie viele Karten, wie große Penetration, wann soll der Croupier keine mehr ziehen).';
+	$projects["blackjack"]["text"]["en"] = 'It\'s a simple Blackjack game, written in jQuery and SCSS. I like playing it, and I was wonder, how difficult could be to create one. And here it is! There is some options too to choose (how many decks, how big penetration, when should the dealer stand).';
+	$projects["blackjack"]["text"]["hu"] = '';
+
 /* ------------------------ overlay text --------------------------*/
 
 	$projects["honey"]["overlay_text"]["de"][1] = "HTML & CSS";
@@ -125,6 +129,12 @@
 	$projects["fight"]["overlay_text"]["en"] = $projects["fight"]["overlay_text"]["de"];
 	$projects["fight"]["overlay_text"]["hu"] = $projects["fight"]["overlay_text"]["de"];
 
+	$projects["blackjack"]["overlay_text"]["de"][1] = "HTML";
+	$projects["blackjack"]["overlay_text"]["de"][2] = "SCSS";
+	$projects["blackjack"]["overlay_text"]["de"][3] = "jQuery";
+	$projects["blackjack"]["overlay_text"]["en"] = $projects["blackjack"]["overlay_text"]["de"];
+	$projects["blackjack"]["overlay_text"]["hu"] = $projects["blackjack"]["overlay_text"]["de"];
+
 /* ------------------------ contact --------------------------*/
 
 	$contact_key = "contact_form";
@@ -137,6 +147,9 @@
 	$contact_title["hu"] = "kapcsolat";
 
 	$contact["de"]["name"] = "Gábor Hetyey";
+	$contact["de"]["CV"] = "<a href='cv/Lebenslauf_DE.pdf' class='link' target='_blank'>Lebenslauf</a>";
+	//$contact["de"]["address"] = "Waldgasse 17/30, 1100 Wien";
+	$contact["de"]["tel"] = "Tel.: +43-660/499-71-94";
 	$contact["de"]["email"] = "E-mail: hetyey.g@gmail.com";
 	$contact["de"]["linkedin"] = "Mein LinkedIn Profil: <a href='https://www.linkedin.com/in/g%C3%A1bor-hetyey-a6415bb0/' class='link' target='_blank'>LinkedIn</a>";
 	$contact["de"]["github"] = "Mein GitHub Profil: <a href='https://github.com/letyo' class='link' target='_blank'>GitHub</a>";
@@ -146,6 +159,9 @@
 EOT;
 
 	$contact["en"]["name"] = "Gábor Hetyey";
+	$contact["en"]["CV"] = "<a href='cv/Lebenslauf_EN.pdf' class='link' target='_blank'>Detailed CV</a>";
+	//$contact["en"]["address"] = "Waldgasse 17/30, 1100 Vienna";
+	$contact["en"]["tel"] = "Tel.: +43-660/499-71-94";
 	$contact["en"]["email"] = "E-mail: hetyey.g@gmail.com";
 	$contact["en"]["linkedin"] = "My LinkedIn account: <a href='https://www.linkedin.com/in/g%C3%A1bor-hetyey-a6415bb0/' class='link' target='_blank'>LinkedIn</a>";
 	$contact["en"]["github"] = "My GitHub account: <a href='https://github.com/letyo' class='link' target='_blank'>GitHub</a>";
@@ -155,6 +171,9 @@ EOT;
 EOT;
 
 	$contact["hu"]["name"] = "Hetyey Gábor";
+	$contact["hu"]["CV"] = "<a href='cv/Lebenslauf_HU.pdf' class='link' target='_blank'>Önéletrajz</a>";
+	//$contact["hu"]["address"] = "Waldgasse 17/30, 1100 Bécs";
+	$contact["hu"]["tel"] = "Tel.: +43-660/499-71-94";
 	$contact["hu"]["email"] = "E-mail: hetyey.g@gmail.com";
 	$contact["hu"]["linkedin"] = "A LinkedIn profilom: <a href='https://www.linkedin.com/in/g%C3%A1bor-hetyey-a6415bb0/' class='link' target='_blank'>LinkedIn</a>";
 	$contact["hu"]["github"] = "A GitHub profilom: <a href='https://github.com/letyo' class='link' target='_blank'>GitHub</a>";
