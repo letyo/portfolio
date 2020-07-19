@@ -83,7 +83,7 @@
 			<!--one after another-->
 
 <?php
-				$types = array("websites", "games");
+				$types = array("websites", "games", "programs");
 				
 				for ($j = 0; $j < count($types); $j++) {
 					$files = glob(__DIR__ . "/../img/" . $types[$j] . "/*.jpg");
@@ -96,7 +96,7 @@
 						<div class="projects">
 							<div class="projects_link">
 							<!--the picture, link and program language to each project-->
-								<a href="<?php echo 'http://buksi.000webhostapp.com/' . $types[$j] . '/' . basename($files[$i], ".jpg") . '/index.php'; ?>" target="_blank">
+								<a href="<?php echo '../../' . $types[$j] . '/' . basename($files[$i], ".jpg") . '/index.php'; ?>" target="_blank">
 									<img class="projects_picture" src="<?php echo 'img/' . $types[$j] . '/' . basename($files[$i]); ?>"/>
 									<div class="overlay">
 										<div class="overlay_text">

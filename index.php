@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Gábor Hetyey</title>
+	<link rel="icon" type="image/png" href="img/favicon.png"/>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Gábor Hetyey">
@@ -18,7 +19,7 @@
 
 		<img src="img/flags/de.jpg" onclick="language('de', 'about', true)" title="Deutsch"/>
 		<img src="img/flags/en.jpg" onclick="language('en', 'about', true)" title="English"/>
-		<!--<img src="img/flags/hu.jpg" onclick="language('hu', 'about', true)" title="Magyar"/>-->
+		<img src="img/flags/hu.jpg" onclick="language('hu', 'about', true)" title="Magyar"/>
 
 	</div>
 

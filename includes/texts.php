@@ -4,27 +4,27 @@
 
 	$header["de"]['about'] = "Über mich";
 	$header["en"]['about'] = "About me";
-	$header["hu"]['about'] = "rólam";
+	$header["hu"]['about'] = "Rólam";
 
 	$header["de"]['projects'] = "Projekte";
 	$header["en"]['projects'] = "Projects";
-	$header["hu"]['projects'] = "projektek";
+	$header["hu"]['projects'] = "Projektek";
 
 	$header["de"]['contact'] = "Kontakt";
 	$header["en"]['contact'] = "Contact";
-	$header["hu"]['contact'] = "kapcsolat";
+	$header["hu"]['contact'] = "Kapcsolat";
 
 /* ------------------------ about me --------------------------*/
 
 	$about_me_title["de"] = "Etwas über mich";
 	$about_me_title["en"] = "A few words about me";
-	$about_me_title["hu"] = "rólam";
+	$about_me_title["hu"] = "Néhány szó rólam";
 
 	$about_me["de"] = 
 		"<p>Liebe(r) BesucherIn,</p>
 		<p>willkommen auf meiner Webseite!</p>
 		<p>Mein Name ist Gábor Hetyey. Ich bin 28 Jahre alt und ich komme aus Ungarn, wohne allerdings schon seit einigen Jahren in Wien.</p>
-		<p>In dem letzten Jahr habe ich mich neben meinem Bauingenieur Studium immer mehr mit der Programmierung beschäftigt. Im Laufe der Zeit war ich dafür immer mehr begeistert, und ich habe mich als ein Programmierer in meinem 5-jährigen Plan vorgestellt. </p>
+		<p>In dem letzten Jahr habe ich mich neben meinem Bauingenieur Studium immer mehr mit der Programmierung beschäftigt. Im Laufe der Zeit war ich dafür immer mehr begeistert und ich habe mich als ein Programmierer in meinem 5-jährigen Plan vorgestellt. </p>
 		<p>Mir ist klar, dass ich gegenüber denen, die Programmieren an einer Universität studiert haben, einen Nachteil habe. Aber weißt Du, was man einen Programierer, der dutzende Programmiersprachen kennt, beim Bewerbungsgespräch fragt? Bist du bereit noch eine zu lernen? Und ich kann Dir versichern, dass ich sehr wissbegierig und in der Lage bin, mir neue Programmiersprachen anzueignen!</p>
 		<p>PS: Dies ist nur eine einfache Version meiner Webseite, die professionelle Version ist nur für jene verfügbar, die mich einstellen. <img src='img/smiley.png' style='height: 1.5rem'/></p>";
 	$about_me["en"] = 
@@ -86,13 +86,17 @@
 	$projects["games"]["en"] = "Games";
 	$projects["games"]["hu"] = "Játékok";
 
+	$projects["programs"]["de"] = "Programmen";
+	$projects["programs"]["en"] = "Programs";
+	$projects["programs"]["hu"] = "Programok";
+
 /* ------------------------ explanation --------------------------*/
 
 	$projects["honey"]["text"]["de"] = 'Mein erste seriösere Webseite. Ja ich weiß, es ist ein bisschen gelb. (aber Honig, Bienen -> gelb) Mein Ziel war eher das Hintergrundprogramm als die Aussicht.';
 	$projects["honey"]["text"]["en"] = 'To be honest, this is the first website I created and I assumed, that yellow suits well to the subject of it (honey, bees). In my opinion, the design is very important to draw attention, however, at this case I focused on back-end rather than front-end.';
 	$projects["honey"]["text"]["hu"] = '';
 
-	$projects["reisen"]["text"]["de"] = 'Hier war mein Ziel eher die gute Aussicht, aber ich hätte auch gern eine bessere Log In Seite gemacht und ich denke, dass ich es hier erreicht habe. (eingeloggt bleiben mit Cookie, bruteforce prüfen, E-Mail schicken, wenn Passwort mehrmals falsch eingetippt ist) Ich habe "parallax" verwendet, und "lightbox" mit rein JavaScript programmiert. Es gibt auch einen kleinen Lader und "jump-to-the-top button" da.';
+	$projects["reisen"]["text"]["de"] = 'Hier war mein Ziel eher die gute Aussicht, aber ich hätte auch gern eine bessere Log In Seite gemacht und ich denke, dass ich es hier erreicht habe. (eingeloggt bleiben mit Cookie, bruteforce prüfen, E-Mail schicken, wenn Passwort mehrmals falsch eingetippt ist) Ich habe "parallax" verwendet und "lightbox" mit rein JavaScript programmiert. Es gibt auch einen kleinen Lader und "jump-to-the-top button" da.';
 	$projects["reisen"]["text"]["en"] = 'My primary goal was the design of the front-end, however, I wanted to create a login page, too. I believe, I managed to do it successfully and I\'m pretty satisfied with the result (stay logged in with cookie, check for bruteforce and send an email, if the password had been mistyped several times). I built the website with parallax scrolling, for the lightbox, I used pure JavaScript and I even created a jump-to-top button with jQuery.';
 	$projects["reisen"]["text"]["hu"] = '';
 
@@ -100,9 +104,17 @@
 	$projects["fight"]["text"]["en"] = 'This is a practice project. I just wanted to dig myself in the creation of games by JavaScript. Despite it is very simple (you can\'t even save), but on the other hand it is very funny. I intend to extend it with various attack-options (weapons, spells) and a save button, beside the creation of new programs and websites.';
 	$projects["fight"]["text"]["hu"] = '';
 
-	$projects["blackjack"]["text"]["de"] = 'Ein einfacher Blackjack-Spiel, wurde in jQuery und SCSS geschrieben. Ich spiele es gerne, und ich habe mich darüber gewundert, wie schwer wäre es einen zu programmieren. Und hier ist es! Man kann auch von einigen Möglichkeiten wählen (wie viele Karten, wie große Penetration, wann soll der Croupier keine mehr ziehen).';
+	$projects["blackjack"]["text"]["de"] = 'Ein einfacher Blackjack-Spiel, wurde in jQuery und SCSS geschrieben. Ich spiele es gerne und ich habe mich darüber gewundert, wie schwer wäre es einen zu programmieren. Und hier ist es! Man kann auch von einigen Möglichkeiten wählen (wie viele Karten, wie große Penetration, wann soll der Croupier keine mehr ziehen).';
 	$projects["blackjack"]["text"]["en"] = 'It\'s a simple Blackjack game, written in jQuery and SCSS. I like playing it, and I was wonder, how difficult could be to create one. And here it is! There is some options too to choose (how many decks, how big penetration, when should the dealer stand).';
 	$projects["blackjack"]["text"]["hu"] = '';
+
+	$projects["play_with_math"]["text"]["de"] = 'Es hat mir immer die Drag\'n\'Drop-Methode gefallen. Diese hat mich inspiriert, so einen Spiel zu machen. Man kann von mehreren Schwierigkeitsgrade wählen und es gibt auch eine Einstellungsmöglichkeit alles anzupassen.'; 
+	$projects["play_with_math"]["text"]["en"] = 'I\'ve always liked the drag\'n\'drop-method. This was the reason, that I wrote this game. It is possible to chose the difficulty level and even fully customize the game.';
+	$projects["play_with_math"]["text"]["hu"] = '';
+
+	$projects["budget"]["text"]["de"] = 'Budget'; 
+	$projects["budget"]["text"]["en"] = 'Budget';
+	$projects["budget"]["text"]["hu"] = 'Budget';
 
 /* ------------------------ overlay text --------------------------*/
 
@@ -135,6 +147,21 @@
 	$projects["blackjack"]["overlay_text"]["en"] = $projects["blackjack"]["overlay_text"]["de"];
 	$projects["blackjack"]["overlay_text"]["hu"] = $projects["blackjack"]["overlay_text"]["de"];
 
+	$projects["play_with_math"]["overlay_text"]["de"][1] = "HTML";
+	$projects["play_with_math"]["overlay_text"]["de"][2] = "CSS";
+	$projects["play_with_math"]["overlay_text"]["de"][3] = "PHP";
+	$projects["play_with_math"]["overlay_text"]["de"][3] = "jQuery";
+	$projects["play_with_math"]["overlay_text"]["en"] = $projects["play_with_math"]["overlay_text"]["de"];
+	$projects["play_with_math"]["overlay_text"]["hu"] = $projects["play_with_math"]["overlay_text"]["de"];
+
+	$projects["budget"]["overlay_text"]["de"][1] = "HTML & CSS";
+	$projects["budget"]["overlay_text"]["de"][2] = "PHP";
+	$projects["budget"]["overlay_text"]["de"][3] = "jQuery";
+	$projects["budget"]["overlay_text"]["de"][4] = "Ajax";
+	$projects["budget"]["overlay_text"]["de"][5] = "MySQL";
+	$projects["budget"]["overlay_text"]["en"] = $projects["budget"]["overlay_text"]["de"];
+	$projects["budget"]["overlay_text"]["hu"] = $projects["budget"]["overlay_text"]["de"];
+
 /* ------------------------ contact --------------------------*/
 
 	$contact_key = "contact_form";
@@ -148,7 +175,7 @@
 
 	$contact["de"]["name"] = "Gábor Hetyey";
 	$contact["de"]["CV"] = "<a href='cv/Lebenslauf_DE.pdf' class='link' target='_blank'>Lebenslauf</a>";
-	//$contact["de"]["address"] = "Waldgasse 17/30, 1100 Wien";
+	$contact["de"]["address"] = "Waldgasse 17/30, 1100 Wien";
 	$contact["de"]["tel"] = "Tel.: +43-660/499-71-94";
 	$contact["de"]["email"] = "E-mail: hetyey.g@gmail.com";
 	$contact["de"]["linkedin"] = "Mein LinkedIn Profil: <a href='https://www.linkedin.com/in/g%C3%A1bor-hetyey-a6415bb0/' class='link' target='_blank'>LinkedIn</a>";
@@ -160,7 +187,7 @@ EOT;
 
 	$contact["en"]["name"] = "Gábor Hetyey";
 	$contact["en"]["CV"] = "<a href='cv/Lebenslauf_EN.pdf' class='link' target='_blank'>Detailed CV</a>";
-	//$contact["en"]["address"] = "Waldgasse 17/30, 1100 Vienna";
+	$contact["en"]["address"] = "Waldgasse 17/30, 1100 Vienna";
 	$contact["en"]["tel"] = "Tel.: +43-660/499-71-94";
 	$contact["en"]["email"] = "E-mail: hetyey.g@gmail.com";
 	$contact["en"]["linkedin"] = "My LinkedIn account: <a href='https://www.linkedin.com/in/g%C3%A1bor-hetyey-a6415bb0/' class='link' target='_blank'>LinkedIn</a>";
@@ -172,8 +199,8 @@ EOT;
 
 	$contact["hu"]["name"] = "Hetyey Gábor";
 	$contact["hu"]["CV"] = "<a href='cv/Lebenslauf_HU.pdf' class='link' target='_blank'>Önéletrajz</a>";
-	//$contact["hu"]["address"] = "Waldgasse 17/30, 1100 Bécs";
-	$contact["hu"]["tel"] = "Tel.: +43-660/499-71-94";
+	$contact["hu"]["address"] = "Waldgasse 17/30, 1100 Bécs";
+	$contact["hu"]["tel"] = "Tel.: +36-20/222-67-02";
 	$contact["hu"]["email"] = "E-mail: hetyey.g@gmail.com";
 	$contact["hu"]["linkedin"] = "A LinkedIn profilom: <a href='https://www.linkedin.com/in/g%C3%A1bor-hetyey-a6415bb0/' class='link' target='_blank'>LinkedIn</a>";
 	$contact["hu"]["github"] = "A GitHub profilom: <a href='https://github.com/letyo' class='link' target='_blank'>GitHub</a>";
@@ -194,10 +221,10 @@ EOT;
 	$placeholder["subject"]["en"] = "Please write the subject here!";
 	$placeholder["message"]["en"] = "Please write your message here!";
 
-	$placeholder["name"]["hu"] = "";
-	$placeholder["email"]["hu"] = "";
-	$placeholder["subject"]["hu"] = "";
-	$placeholder["message"]["hu"] = "";
+	$placeholder["name"]["hu"] = "Kérem írja a nevét ide!";
+	$placeholder["email"]["hu"] = "Kérem adja meg e-mail-címét!";
+	$placeholder["subject"]["hu"] = "Kérem írja a tárgyat ide!";
+	$placeholder["message"]["hu"] = "Kérem írja az üzenetet ide!";
 
 	$labels["name"]["de"] = "Name";
 	$labels["email"]["de"] = "E-Mail-Adresse";
@@ -211,22 +238,22 @@ EOT;
 	$labels["message"]["en"] = "Message";
 	$labels["button"]["en"] = "Send";
 
-	$labels["name"]["hu"] = "";
-	$labels["email"]["hu"] = "";
-	$labels["subject"]["hu"] = "";
-	$labels["message"]["hu"] = "";
-	$labels["button"]["hu"] = "";
+	$labels["name"]["hu"] = "Név";
+	$labels["email"]["hu"] = "E-mail-cím";
+	$labels["subject"]["hu"] = "Tárgy";
+	$labels["message"]["hu"] = "Üzenet";
+	$labels["button"]["hu"] = "Küldés";
 
 	$email_error["de"] = "Geben Sie bitte eine existierende E-Mail-Addresse ein!";
 	$email_error["en"] = "Please enter a valid email address!";
-	$email_error["hu"] = "";
+	$email_error["hu"] = "Kérem egy valós e-mail-címet adjon meg!";
 
 	$empty["de"] = "Füllen Sie bitte alle Eingabefelder aus!";
 	$empty["en"] = "Please fill out all input fields!";
-	$empty["hu"] = "";
+	$empty["hu"] = "Kérem töltse ki az összes mezőt!";
 
 	$successful["de"] = "Ihre Nachricht wurde erfolgreich weitergeleitet!";
 	$successful["en"] = "Your message has been successfully sent!";
-	$successful["hu"] = "";
+	$successful["hu"] = "Az üzenet sikeresen el lett küldve!";
 
 ?>
